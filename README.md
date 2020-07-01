@@ -42,7 +42,7 @@ For simplicity we suggest to create a separate repo for the webpage (separate fr
 	
 ## Editing your webpage
 
-* Each page is a markdown document
+* Each page is a markdown document (note the Home page corresponds to the index.md)
 	* Markdown is a text marking language designed for the web 
 		* [Markdown Tutorial](https://daringfireball.net/projects/markdown/syntax)
 	
