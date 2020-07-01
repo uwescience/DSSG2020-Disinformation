@@ -10,6 +10,8 @@ layout: default
 ## The Team
 
 **Project Lead/s:**
+1. Maggie Engler
+2. Lucas Wright
 
 **Data Science Lead:** 
 
@@ -18,7 +20,7 @@ layout: default
 
 **DSSG Fellows:** 
 
-1. George 
+1. George Hope Chidziwisano
 2. Kseniya Husak
 3. Maya Luetke
 4. Richa Gupta
