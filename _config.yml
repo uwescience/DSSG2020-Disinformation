@@ -9,7 +9,7 @@ title:            DSSG2020 Disinformation
 tagline:          ''
 description:      'A 2020 Data Science for Social Good summer fellowship project at the University of Washington' 
 url:              "https://uwescience.github.io"
-baseurl:          "/DSSG2020-disinformation"
+baseurl:          "/DSSG2020-Disinformation"
 
 
 paginate:         5
