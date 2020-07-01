@@ -24,3 +24,4 @@ layout: default
 4. Richa Gupta
 
 # Abstract or executive summary
+ Websites that disseminate disinformation might harm the general public by spreading rumors and producing untrustworthy content. Specifically, the spread of disinformation related to coronavirus could contribute to people not engaging in the necessary prevention measures and, thus, lead to increased transmission of the virus, which would result in increased morbidity and mortality worldwide. Developing a method to identify disinformation sites could mitigate these harmful effects by allowing advertisers to not fund such sites.
