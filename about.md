@@ -30,7 +30,12 @@ Maya Luetke, MSPH, is a doctoral student in the Department of Epidemiology and B
 
 Roles or Contributions (optional, only if it makes sense to your team)
 
+
 Where readers can find more details about the project, e.g. code, data, reports, etc.
+
+The code for the project can be found on the project's GitHub repository.
+
+The project has a WIKI page where reports and other documents can be found
 
 Acknowledgements
 
