@@ -3,13 +3,6 @@ layout: page
 title: Motivation
 ---
 
-**Executive summary**
-
-Websites that disseminate disinformation might harm the general public by spreading rumors and producing untrustworthy content. Specifically, the spread of disinformation related to coronavirus could contribute to people not engaging in the necessary prevention measures and, thus, lead to increased transmission of the virus, which would result in increased morbidity and mortality worldwide.
-
-Developing a method to identify disinformation sites could mitigate these harmful effects by allowing advertisers to not fund such sites. The purpose of this project is to develop an open-source natural language processing model that can accurately classify news articles according to their risk of containing disinformation about the coronavirus.
-
-
 **Background**
 
 The production and consumption of news has changed dramatically over the past decade. Specifically, the move from predominantly print to predominantly electronic formats has heralded numerous new challenges. One such challenge is the proliferation of disinformation websites and the corresponding spread of unreliable, untrustworthy, or even purposefully incendiary or deceptive content. In the US and globally, this proliferation of online disinformation has eroded public trust in mainstream media, political actors, and even public health officials. 
