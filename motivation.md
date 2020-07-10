@@ -13,7 +13,7 @@ The deleterious impact of disinformation is perhaps most consequential in regard
 
 Examples of coronavirus related disinformation narratives:
 
-![Image of disinformation narratives](https://github.com/uwescience/DSSG2020-Disinformation/blob/master/assets/img/coronavirus_map.png)
+![]({% static 'img/coronavirus_map.png' %})
 
 Source: https://disinformationindex.org/wp-content/uploads/2020/07/GDI_Ad-funded-COVID-19-Disinformation-1.pdf
 
