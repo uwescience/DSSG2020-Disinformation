@@ -6,22 +6,18 @@ title: Motivation
 **Background**
 
 The production and consumption of news has changed dramatically over the past decade. Specifically, the move from predominantly print to predominantly electronic formats has heralded numerous new challenges. One such challenge is the proliferation of disinformation websites and the corresponding spread of unreliable, untrustworthy, or even purposefully incendiary or deceptive content. In the US and globally, this proliferation of online disinformation has eroded public trust in mainstream media, political actors, and even public health officials. 
-
-![Image of coronavirus](https://disinformationindex.org/wp-content/uploads/2020/04/covid-19-4961257_1920-e1585830081916.jpg =100x20)
  
 The deleterious impact of disinformation is perhaps most consequential in regard to the ongoing coronavirus pandemic. Disinformation related to the coronavirus poses a broad threat to national and global public health, particularly if individuals  disregard the public health measures (e.g., socially-distancing, wearing a mask, etc.) necessary to mitigate the continued transmission of the virus. Further, this type of disinformation has also contributed to the direct loss of lives after self-administration of unproven medications promoted by online disinformation. 
 
 Examples of coronavirus related disinformation narratives:
 
-![](assets/img/coronavirus_map.png)
-
-Source: https://disinformationindex.org/wp-content/uploads/2020/07/GDI_Ad-funded-COVID-19-Disinformation-1.pdf
+![Image of disinformation narratives](assets/img/coronavirus_map.png)
+*Source: https://disinformationindex.org/wp-content/uploads/2020/07/GDI_Ad-funded-COVID-19-Disinformation-1.pdf*
 
 Examples of possible harms of coronavirus related disinformation narratives:
 
-![Image of possible harms](https://github.com/uwescience/DSSG2020-Disinformation/blob/master/assets/img/coronavirus_table.png)
-
-Source: https://disinformationindex.org/wp-content/uploads/2020/07/GDI_Ad-funded-COVID-19-Disinformation-1.pdf
+![Image of possible harms](assets/img/coronavirus_table.png)
+*Source: https://disinformationindex.org/wp-content/uploads/2020/07/GDI_Ad-funded-COVID-19-Disinformation-1.pdf*
 
 Our partner organization, **The Global Disinformation Index (GDI)**, is already engaged in work to identify and defund disinformation on the internet. Their current focus involves identifying disinformation websites via a system of scoring the degree of disinformation risk at the domain-level.
 
