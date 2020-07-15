@@ -52,6 +52,7 @@ The project consists of direct stakeholders who are involved from the early stag
 * **Data Science for Social Good Fellows**: This group of stakeholders consist of students from different universities who are working as interns. The fellows are working directly with project lead and data scientists to develop the model.
 
 * **Ad exchange companies**: Ad exchange companies (e.g., Google) will be the primary users of the model to identify articles that have disinformation.
+
 Meanwhile, the indirect stakeholders of this project are:
  
 * **Global Alliance for Responsible Media (GARM)**: GARM brings together advertisers, agencies, media companies, platforms and industry organizations to improve public safety. GDI will deliver the model to GARM to be shared with other stakeholders within GARM.
