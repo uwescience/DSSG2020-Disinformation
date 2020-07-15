@@ -10,9 +10,10 @@ The production and consumption of news has changed dramatically over the past de
 The deleterious impact of disinformation is perhaps most consequential in regard to the ongoing coronavirus pandemic. Disinformation related to the coronavirus poses a broad threat to national and global public health, particularly if individuals  disregard the public health measures (e.g., socially-distancing, wearing a mask, etc.) necessary to mitigate the continued transmission of the virus. Further, this type of disinformation has also contributed to the direct loss of lives after self-administration of unproven medications promoted by online disinformation. 
 
 Examples of coronavirus related disinformation narratives:
-
+<p align="center">
 ![Image of disinformation narratives](assets/img/coronavirus_map.png)
 *Source: https://disinformationindex.org/wp-content/uploads/2020/07/GDI_Ad-funded-COVID-19-Disinformation-1.pdf*
+</p>
 
 Examples of possible harms of coronavirus related disinformation narratives:
 
@@ -21,7 +22,7 @@ Examples of possible harms of coronavirus related disinformation narratives:
 
 Our partner organization, **The Global Disinformation Index (GDI)**, is already engaged in work to identify and defund disinformation on the internet. Their current focus involves identifying disinformation websites via a system of scoring the degree of disinformation risk at the domain-level.
 
-To this end, GDI under the general guidance of the Technical Advisory Group[1], has developed and piloted an index that provides disinformation risk ratings for news sites in media markets across the globe. This risk rating is based on expert-identified disinformation ‘flags’ that can be combined to estimate accurate and unbiased risk assessment of a news domain. 
+To this end, GDI under the general guidance of the Technical Advisory Group [1], has developed and piloted an index that provides disinformation risk ratings for news sites in media markets across the globe. This risk rating is based on expert-identified disinformation ‘flags’ that can be combined to estimate accurate and unbiased risk assessment of a news domain. 
 
 The actual process by which a site’s risk rating is determined consists of both automated and manual assessments. Evaluation of published content for credibility, sensationalism, hate speech and impartiality is done manually by an analyst with subject matter expertise. Artificial intelligence, developed from a sample of 20,000 known disinformation domains, is deployed in assessing domain metadata and computational signals. Furthermore, an independent review of the news site’s compliance with Journalism Trust Initiative (JTI) is used to assess domain’s trust and reliability. Lastly, the domain is assessed by an independent expert survey for reputational practices, reliability and trustworthiness. All four assessments are combined to assign the domain an aggregate rating based on a score of 0 to 100, where a lower score indicates a higher risk of disinformation. Importantly, this score does not establish that a site actually carries disinformation, but rather provides a risk assessment metric.
  
@@ -45,17 +46,16 @@ This DSSG project is focused on addressing online disinformation related to coro
 
 The project consists of direct stakeholders who are involved from the early stages of developing the models and indirect stakeholders who will be affected by the operation of the model or use it at later stages. The direct stakeholders of this project are:
  
-* **Global Disinformation Index (GDI)**: GDI works with governments, businesses and civil society to defund and down-rank disinformation websites. They have built various classifiers to support detection of disinformation in news articles. GDI’s Maggie Engler (Lead Data Scientist) and Lucas Wright (Senior Researcher) are the project leads.
+* **[Global Disinformation Index (GDI)](https://disinformationindex.org/)**: GDI works with governments, businesses and civil society to defund and down-rank disinformation websites. They have built various classifiers to support detection of disinformation in news articles. GDI’s Maggie Engler (Lead Data Scientist) and Lucas Wright (Senior Researcher) are the project leads.
  
-* **University of Washington eScience Institute**: This project is part of the Data Science for Social Good (DSSG) program hosted by the e-Science Institute at the University of Washington. The eScience Institute provides the administrative teams and data scientists (Noah Benson and Vaughn Iverson).
+* **[University of Washington eScience Institute](https://escience.washington.edu/)**: This project is part of the Data Science for Social Good (DSSG) program hosted by the e-Science Institute at the University of Washington. The eScience Institute provides the administrative teams and data scientists (Noah Benson and Vaughn Iverson).
  
 * **Data Science for Social Good Fellows**: This group of stakeholders consist of students from different universities who are working as interns. The fellows are working directly with project lead and data scientists to develop the model.
 
 * **Ad exchange companies**: Ad exchange companies (e.g., Google) will be the primary users of the model to identify articles that have disinformation.
-
 Meanwhile, the indirect stakeholders of this project are:
  
-* **Global Alliance for Responsible Media (GARM)**: GARM brings together advertisers, agencies, media companies, platforms and industry organizations to improve public safety. GDI will deliver the model to GARM to be shared with other stakeholders within GARM.
+* **[Global Alliance for Responsible Media (GARM)](https://wfanet.org/garm)**: GARM brings together advertisers, agencies, media companies, platforms and industry organizations to improve public safety. GDI will deliver the model to GARM to be shared with other stakeholders within GARM.
  
 * **Data scientists and researchers**: The model will be open source and it will be available on GitHub for other data scientists and researchers to access it and use it in their research projects.
 
