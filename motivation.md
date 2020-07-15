@@ -68,17 +68,25 @@ There is a possibility that the model might automatically label a “genuine” 
 
 At the heart of this problem lies the difficulty of measuring the extent of disinformation in a given article. Are there half-truths present? And does the article mostly contain factual information save for a couple of sentences? Any tool built to automatically classify articles as disinformation then needs to make a trade-off between truthful and disinformation content. 
  
-Due to the open-source nature of this project, it is possible that groups invested in the creation and propagation of digital disinformation may utilize our code and documentation in order to produce content which would escape detection in our final model.
+Also, due to the open-source nature of this project, it is possible that groups invested in the creation and propagation of digital disinformation may utilize our code and documentation in order to produce content which would escape detection in our final model.
 
 Publicly labelling an article as “disinformation” must be supported by substantial evidence and rigorous protocols which might be lacking in some of the machine learning models that the team decides to use. The model will also be limited by the nuances of the training data.
 
 We will be undertaking the following steps to address the ethical questions:
 
 * Detailed process documentation
-* Laying out the assumptions
+
+Besides being a good general practice, detailed process documentation will make the user aware of the blindspots of the model. 
+
+A good documentation will help the team lay out their assumptions and air out the inherent biases the team might have built into the model.
+
 * Sharing the metrics/ criterion used
+
+What is the predicted probability that an article is disinformation/ genuine? What are the hyper-parameters being used by the model? What should be the accuracy of the model to qualify as the chosen model? These and more questions about metrics, if answered, help the user validate the work being done.
+
 * Building model alternatives and performing cross-model-validation
 
+The team will be building a variety of models and performing their validation to make an aware decision about the final model. The assessment of a model against the suitability and context of the problem will help reduce subjectivity around the outcomes further.
 
 ---
 
