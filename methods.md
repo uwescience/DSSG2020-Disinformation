@@ -23,7 +23,7 @@ For data cleaning, preprocessing,and data modelling we are mostly relying on the
 
 **Processes**
 
-The following diagram captures the overall workflow of this project, starting with data cleaning and processing and culminating in selection of the final model. Once the data is prepped it is divided into test and train data. While training the model the train data is also used to cross-validate the model to make sure that the chosen model has the highest performance. Once a model is trained with train data, it is then evaluated against the test data that was held off in the beginning. Finally, the performance of a model is evaluated by how well it is able to predict the test data categories.
+The following diagram captures the overall workflow of this project, starting with data cleaning and processing and culminating in selection of the final model. Once the data is prepped it is divided into test and train data. While training the model the train data is also used to cross-validate the model to make sure that the chosen model has the highest performance. Finally, the performance of a model is evaluated by how well it is able to predict the test data categories.
 
 ![Image of disinformation narratives](assets/img/Pipeline.png)
 
