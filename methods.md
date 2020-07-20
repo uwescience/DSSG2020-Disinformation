@@ -19,7 +19,7 @@ In the upcoming weeks, we will need to extract features from the text data throu
 
 **Tools (aka “component specification”)**
 
-For data cleaning, preprocessing,and data modelling we are mostly relying on the following packages/libraries: NLTK, Pandas, and sklearn. We anticipate that a few more libraries will be used in the feature engineering process (i.e. word embedding packages such as Word2Vec). We are also working on streamlining some of our main script by developing individual modules in Python targeted as a specific task (i.e. data cleaning, embedded link analysis, etc.). Since all of these tools were designed for Python, they are already interoperable. 
+For data cleaning, preprocessing,and data modelling we are mostly relying on the following packages/libraries: NLTK, Pandas, scipy, and sklearn. We anticipate that a few more libraries will be used in the feature engineering process (i.e. word embedding packages such as Word2Vec). We are also working on streamlining some of our main script by developing individual modules in Python targeted as a specific task (i.e. data cleaning, embedded link analysis, etc.). Since all of these tools were designed for Python, they are already interoperable. 
 
 **Processes**
 
