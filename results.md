@@ -8,7 +8,7 @@ title: Results
 What were the outcomes of your analyses?
 
 | Model Name | Layers | Accuracy| Recall |
-| :---        |    :----:   |          ---: |
+| :---        |    :----:   |    :----:  |      ---: |
 | Model 1      |        |       |         |    
 | Model 2   |         |          |         |  
 | Model 3   |         |          |          | 
