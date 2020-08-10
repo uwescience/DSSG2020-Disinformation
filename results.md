@@ -7,21 +7,10 @@ title: Results
 
 What were the outcomes of your analyses?
 
-
-Name
-Definition
-
-
-Recall score
-true positives + true negatives / total observations
-
-
-Accuracy Score
-true positives / (true positives + false positives)
-
-
-Precision Score
-true positives / (true positives + false negatives)
+| Model Name      | Layers |      Accuracy| Recall |
+| :---        |    :----:   |          ---: |
+| Model 1      |        |       |             |
+| Model 2   |         |          |           |
 
 
 
