@@ -7,10 +7,11 @@ title: Results
 
 What were the outcomes of your analyses?
 
-| Model Name      | Layers |      Accuracy| Recall |
+| Model Name | Layers | Accuracy| Recall |
 | :---        |    :----:   |          ---: |
-| Model 1      |        |       |             |
-| Model 2   |         |          |           |
+| Model 1      |        |       |         |    
+| Model 2   |         |          |         |  
+| Model 3   |         |          |          | 
 
 
 
@@ -49,7 +50,7 @@ Trained embeddings (news articles on COVID)
 Working with text data requires that it is not only processed in accordance with standard natural language processing principles (standardizing, normalizing) but that it is also converted into a mathematical representation which then allows for more advanced machine learning. As described in the Methods section, word embeddings allow for such a transformation of text. There are many pre-trained word embeddings that are available to researchers (GloVe, Word2Vec). However, based on discussions with GDI and our data science team we chose to train our own GloVe embeddings on a subset of articles provided by GDI. This corpus was not part of our training dataset, and besides training word embeddings was not used for any other purpose. We produced a 300 dimension word embedding from a text corpus of ______ MB/GB. There are ______ unique vocabulary words in these embeddings. These embeddings can be used independently to train other natural language models.
 
 
-We checked the output of these embeddings against other pre-trained embeddings for comparison purposes. For instance, the word “Trump” was associated with ____ and ___ in our bespoked model, while in the GloVe model it was associated with ____ and ____. 
+We checked the output of these embeddings against other pre-trained embeddings for comparison purposes. For instance, the word “Trump” was associated with ______ and ___ in our bespoked model, while in the GloVe model it was associated with ______ and ____. 
 
 (PASTE IMAGE BELOW SHOWING MOST SIMILAR WORDS FOR ‘VIRUS’ FOR OUR TRAINED WORD EMBEDDING MODEL AND PRE-TRAINED ONE). 
 
