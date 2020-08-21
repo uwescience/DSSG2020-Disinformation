@@ -1,4 +1,3 @@
-# Model 3: Multiple Input Model
 
 ![Model 3 Image](assets/img/model3.png)
 
