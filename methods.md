@@ -49,22 +49,51 @@ The following diagram captures the overall workflow of this project, starting wi
 
 ![Image of disinformation narratives](assets/img/Pipeline.png)
 
-Although we are still brainstorming which models are most appropriate for this given task, the following are close contenders and the team has tried their hand at a few of these already in some capacity:
-
-* Logistic Regression Classifier
-* Naive Bayes Classifier
-* Random Forest
-* Neural Networks
-
-This list is a work in progress.
-
 **Analyses**
 
-At this point, we haven't finalized building our models. However, once that part of the pipeline is complete, we are planning to evaluate each model we develop with the following tests:
+*Model 1: Baseline Model*
 
-* Precision score (true positives / (true positives + false positives))
-* Accuracy score (true positives + true negatives / total observations)
-* Recall score (true positives / (true positives + false negatives)
+This model acts as a baseline model for the next 2 models. Model 1 is a Recurrent Neural Network LSTM (Long Short Term Memory) model which takes the article texts as input and predicts whether the article is disinformation or legitimate. The model embeds the article text as vectors which are then fed into a bidirectional LSTM layer.
+
+![Baseline model](assets/img/model.1.png)
+
+This model has validation AUC (Area under the Curve) ranging from 97.6-98.6% across 7 epochs and training AUC ranging from 95.1-99.7%.
+
+    1. The why?
+    
+Methods such as Tfidf, word count frequencies are very commonly used as predictors of different categories. Our idea was to not only look at what is the        frequency of the words appearing in an article but also the context in which they appear.
+
+![Context](assets/img/context.png)
+
+For example, in the following sentence:
+
+The <b><ins>pandemic</ins></b> has been <b><ins>tough</ins></b> on our people. While there have been some signs of recovery, <b><ins>coronavirus</ins></b> has put us in a <b><ins>challenging</ins></b> position.
+
+We wanted to find a way to find an association between words pandemic, tough and also coronavirus and challenging because they appear in a similar context. These associations can be a very strong way to tell apart disinformation articles from legitimate articles. We decided to use the Long Short Term Memory Model to train our data.
+
+    2. Architecture
+
+Layers of the model:
+
+![Context](assets/img/layers1.png)
+
+1. Embedding layer: 
+This layer takes in the article text as input and generates word embeddings.
+2. Bidirectional LSTM layer
+This layer helps build the context of the word embedding inputs.
+3. Dense layer
+4. Dropout layer
+We added a dropout layer as a method to help model avoid overfitting. The dropout rate is a number between 0 and 1. 
+5. Output layer
+Binary output in the form of 0 and 1. 0 if the news article is predicted as legitimate and 1 if the news article is predicted as disinformation.
+
+    3. Features
+
+This model takes as input the news article text. The news article text is passed into the model after preprocessing like removing noisy characters, removing duplicates etc. You can read more about the preprocessing steps <a href="https://uwescience.github.io/DSSG2020-Disinformation/methods/">here<a>
+    
+The first layer of the model converts the text data into word embeddings. Word embedding is a way of converting a text corpus into an array of numbers by representing those numbers across multi-dimensional features.
+
+
 
 **Limitations**
 
