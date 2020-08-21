@@ -1,4 +1,4 @@
-**Model 1: Baseline Model**
+# Model 1: Baseline Model
 
 This model acts as a baseline model for the next 2 models. Model 1 is a Recurrent Neural Network LSTM (Long Short Term Memory) model which takes the article texts as input and predicts whether the article is disinformation or legitimate. The model embeds the article text as vectors which are then fed into a bidirectional LSTM layer.
 
@@ -6,7 +6,7 @@ This model acts as a baseline model for the next 2 models. Model 1 is a Recurren
 
 This model has validation AUC (Area under the Curve) ranging from 97.6-98.6% across 7 epochs and training AUC ranging from 95.1-99.7%.
 
-    1. The why?
+## 1. The why?
     
 Methods such as Tfidf, word count frequencies are very commonly used as predictors of different categories. Our idea was to not only look at what is the        frequency of the words appearing in an article but also the context in which they appear.
 
@@ -18,7 +18,7 @@ The <b><ins>pandemic</ins></b> has been <b><ins>tough</ins></b> on our people. W
 
 We wanted to find a way to find an association between words pandemic, tough and also coronavirus and challenging because they appear in a similar context. These associations can be a very strong way to tell apart disinformation articles from legitimate articles. We decided to use the Long Short Term Memory Model to train our data.
 
-    2. Architecture
+## 2. Architecture
 
 Layers of the model:
 
@@ -34,7 +34,7 @@ We added a dropout layer as a method to help model avoid overfitting. The dropou
 5. Output layer
 Binary output in the form of 0 and 1. 0 if the news article is predicted as legitimate and 1 if the news article is predicted as disinformation.
 
-    3. Features
+## 3. Features
 
 This model takes as input the news article text. The news article text is passed into the model after preprocessing like removing noisy characters, removing duplicates etc. You can read more about the preprocessing steps <a href="https://uwescience.github.io/DSSG2020-Disinformation/methods/">here<a>
     
@@ -44,7 +44,7 @@ The first layer of the model converts the text data into word embeddings. Word e
 
 Words that share similar features have vectors that are closer to each other than words that do not share similar features. The number of features is a parameter that can be chosen by passing embedding dimensions into the first layer. We used the entire training articles text to train these word embeddings.
 
-    4. Analysis
+## 4. Analysis
     
 AUC - Area Under the Curve:
 
