@@ -7,7 +7,7 @@ We were able to run a total of three models using different combinations of hype
 *Table 1 - Hyperparameters Tested*
 
 | Hyperparameter | Range of Values Tested | 
-| :----:        |    :----:   |  
+| :----        |    :----:   |  
 | Number of filters in BiDirectional LSTM Layer   |  32, 64, 128   |      
 | Number of filters in hidden layer |     10    |         
 | Vocabulary Size |   10,000      |         
@@ -23,7 +23,7 @@ Overall, Model 1 and Model 2 have nearly identical rates of predicting true posi
 *Table 2 - Model Performance Metrics*
 
 | Model Name | True Positives* | False Positives* | 
-| :----:       |    :----:   |  :----: |
+| :----       |    :----:   |  :----: |
 | Model 1 - LSTM   |  94%   |  3.2%   |      
 | Model 2 - LSTM+COVID-trained word Embeddings|    93.7%   |  2.8%   |      
 
