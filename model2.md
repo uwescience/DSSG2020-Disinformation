@@ -23,13 +23,14 @@ We initially embedded the words in our sample using GloVe pre-trained word embed
 We experimented with two different word embeddings - 200-dimensional and 300-dimensional GloVe layers. Article text was the only feature in this model. 
 Our final test data had 7,105 samples. Of the 2,420 disinformation articles this  model correctly classified 2,268 of them. Of the 4,685 legitimate articles our model incorrectly classified 131 of them as disinformation. 
 
-Confusion Matrix:
+## Outputs 
+
 ![Word embeddings](assets/img/matrix2.png)
 
-AUC:
+
 
 ![Word embeddings](assets/img/auc2.png)
 
-Loss:
+
 
 ![Word embeddings](assets/img/loss2.png)
