@@ -1,4 +1,4 @@
-*Model 3: Multiple Input Model*
+**Model 3: Multiple Input Model**
 
 Short description:
 
