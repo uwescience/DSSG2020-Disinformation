@@ -65,11 +65,10 @@ Working with text data requires that it is not only processed in accordance with
 Throughout this project, our team relied heavily on literature review to inform our methodology. Our focus was on surveying the most recent literature on article classification with machine learning. We’ve read a total of 30 papers and documented key summaries in an annotated bibliography available in the public repository. This document serves as a guidepost for our thinking process, assumptions as well as framework within which this project took place. Our aim was to build on top of the most recent wisdom in text classification. 
 
 
-**How Deliverables Will Be Used**
+![Future Work](assets/img/future_work.png)
 
 We hope that the deliverables will be used to design a larger model which will be able to provide disinformation indexes for news websites. Such an index can inform advertisers about the “health” of a news website and thereby stopping advertising content on “unhealthy” websites. We created and tested our models with the intention of the best one being useful to GDI as well as other researchers working in the space of disinformation. Going forward in developing the prototypes further, the following could prove useful: 
 
-![Future Work](assets/img/future_work.png)
 
 *Model Retraining*
 Because disinformation narratives change very rapidly, it will be important to retrain the classifier periodically on most recent data. It will also be important to determine how often the model needs to be retrained with new data. 
