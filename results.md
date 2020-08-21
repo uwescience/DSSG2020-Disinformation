@@ -5,9 +5,9 @@ title: Results
 
 **Findings**
 
-We were able to run a total of three models using different combinations of hyperparameters, features and architectures. For models that relied exclusively on word embedding features (model 1 and model 2--hyperlink?), we used GridSearchCV to test a total of 72 hyperparameter combinations (see Table 1 below) and ran each model for 7 epochs to assess learning and validation rates (refer to individual model tabs to see the graphs for respective models). We also used stratified cross validation with 5 folds for Models 1 (LSTM) and 2 (LSTM + Our Own Trained Embeddings) to avoid overfitting. For running the Multiple Inputs model, we were not able to utilize GridSearchCV. However, we manually ran the model with a set of hyperparameters. 
+We were able to run a total of three models using different combinations of hyperparameters, features and architectures. For models that relied exclusively on word embedding features (model 1 and model 2--hyperlink?), we used GridSearchCV to test a total of 72 hyperparameter combinations (see *Table 1* below) and ran each model for 7 epochs to assess learning and validation rates (refer to individual model tabs to see the graphs for respective models). We also used stratified cross validation with 5 folds for Models 1 (LSTM) and 2 (LSTM + Our Own Trained Embeddings) to avoid overfitting. For running the Multiple Inputs model, we were not able to utilize GridSearchCV. However, we manually ran the model with a set of hyperparameters. 
 
-**Table 1 Hyperparameters Tested **
+*Table 1 - Hyperparameters Tested*
 
 | Hyperparameter | Range of Values Tested | 
 | :---        |    :----:   |  
@@ -19,19 +19,19 @@ We were able to run a total of three models using different combinations of hype
 | Dropout Rate|   0.2, 0.3, 0.4, 0.5     |     
 | Optimizer|   adam, nadam     | 
 
-Table 2 contains the two main metrics we used to evaluate model performance - percentage of correctly predicted disinformation articles (True Positives) and percentage of incorrectly predicted legitimate articles (False Positives). For Model 1, of the 2,420 disinformation articles in our test dataset it correctly classified 2,274 of them. That’s a 93.7% correct prediction rate. Of the 4,685 legitimate articles our model incorrectly classified 149 of them as disinformation, or 3.2%.For Model 2, of the 2,420 disinformation articles in our test dataset it correctly classified 2,268 of them. That’s a 93.7% correct prediction rate. Of the 4,685 legitimate articles our model incorrectly classified 131 of them as disinformation, or 2.8%. 
+*Table 2* contains the two main metrics we used to evaluate model performance - percentage of correctly predicted disinformation articles (True Positives) and percentage of incorrectly predicted legitimate articles (False Positives). For Model 1, of the 2,420 disinformation articles in our test dataset it correctly classified 2,274 of them. That’s a 93.7% correct prediction rate. Of the 4,685 legitimate articles our model incorrectly classified 149 of them as disinformation, or 3.2%.For Model 2, of the 2,420 disinformation articles in our test dataset it correctly classified 2,268 of them. That’s a 93.7% correct prediction rate. Of the 4,685 legitimate articles our model incorrectly classified 131 of them as disinformation, or 2.8%. 
 
 Overall, Model 1 and Model 2 have nearly identical rates of predicting true positives, although Model 1 does slightly better with 94% compared to 93.7%. Similarly, the two models are not too far off when it comes to prediction rate for false positives. However, Model 2 performs slightly better in terms of incorrectly classifying legitimate news - at 2.8% vs. 3.2%. 
 
-**Table 2 Model Performance Metrics **
+*Table 2 - Model Performance Metrics*
 
 | Model Name | True Positives* | False Positives* | 
 | :---        |    :----:   |  ---: |
 | Model 1 - LSTM   |  94%   |  3.2%   |      
 | Model 2 - LSTM+COVID-trained word Embeddings|    93.7%   |  2.8%   |      
 
-*True Positives: Disinformation articles that were correctly predicted as disinformation by the model.
-*False Positives: Legitimate articles that were incorrectly predicted as disinformation by the model.
+*True Positives: Disinformation articles that were correctly predicted as disinformation by the model.*
+*False Positives: Legitimate articles that were incorrectly predicted as disinformation by the model.*
 
 Although we didn’t have the bandwidth to fully and thoroughly analyze false positives, one theory we had about why both models are still misclassifying legitimate articles is because some of them talk about disinformation. We did find one article in the False Positives results to support this theory: 
 
@@ -53,21 +53,16 @@ Using more features- metadata, other types of embeddings, etc. Both Model 1 and 
 
 In this project, we tested a limited number of model architectures and hyperparameters. There are many more different combinations that could be tested to see if the classifier can be improved and we encourage  such further experimentation. 
 
-
-
-ARTIFACTS 
+**Artifacts** 
 
 In addition to the three models we’ve developed, we have also created the following artifacts which can be useful for further exploration and research. 
 
-
-Trained embeddings (news articles on COVID)
+*Trained embeddings (news articles with COVID keywords)*
 Working with text data requires that it is not only processed in accordance with standard natural language processing principles (standardizing, normalizing) but that it is also converted into a mathematical representation which then allows for more advanced machine learning. As described in the Methods section, word embeddings allow for such a transformation of text. There are many pre-trained word embeddings that are available to researchers (GloVe, Word2Vec). However, based on discussions with GDI and our data science team we chose to train our own GloVe embeddings on a subset of articles provided by GDI. This corpus was not part of our training dataset, and besides training word embeddings was not used for any other purpose. We produced a 300 dimension word embedding tailored to COVID keywords which we think could be very useful to future research. 
 
 
-Annotated Bibliography
+*Annotated Bibliography*
 Throughout this project, our team relied heavily on literature review to inform our methodology. Our focus was on surveying the most recent literature on article classification with machine learning. We’ve read a total of 30 papers and documented key summaries in an annotated bibliography available in the public repository. This document serves as a guidepost for our thinking process, assumptions as well as framework within which this project took place. Our aim was to build on top of the most recent wisdom in text classification. 
-
-
 
 
 **How Deliverables Will Be Used**
@@ -76,10 +71,13 @@ We hope that the deliverables will be used to design a larger model which will b
 
 *Model Retraining*
 Because disinformation narratives change very rapidly, it will be important to retrain the classifier periodically on most recent data. It will also be important to determine how often the model needs to be retrained with new data. 
+
 *Measures to Prevent Misuse*
 Any kind of classifier can be misused. We fully rely on GDI to place measures to prevent such misuse in the final iteration of this tool if used. 
+
 *Application to Other Areas*
 Lastly, GDI might find this model prototype useful for classification in other topic areas, and make our recommended model generalizable to other disinformation topics (besides COVID19) 
+
 *Other researchers*
 By making this an open-source model, we hope other researchers will be able to use our model as a guide in their projects. 
 
