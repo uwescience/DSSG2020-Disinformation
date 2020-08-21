@@ -1,7 +1,7 @@
 **Model 3: Multiple Input Model**
 
 
-![Word embeddings](assets/img/model3.png)
+![Model 3 Image](assets/img/model3.png)
 
 The existing literature indicates that neural networks have the greatest performance for text classification but they also don’t allow for the extraction of features since the features in such a model are hidden. Adding hand-crafted features add a greater amount of transparency about the features which have helped the model differentiate in the text classification task. Additionally, layering hand-crafted features on top of a neural network model in this way has been identified as a potential way to increase performance and an area of investigation by current neural network research on this topic.
 
@@ -32,7 +32,7 @@ train_meta_data = df['PROPN','ADP','NOUN','PUNCT','SYM',
     
 This model combines two different inputs. First, similar to the other two models, the article text was converted to word embeddings in the first layer. Next, the hand-crafted lexical and semantic features are also brought into the model as inputs in their own layer. 
 
-![Word embeddings](assets/img/models3.png)
+
 
 nlp_input=Input(shape=[None]) # Input layer for text
     meta_input=Input(shape=(22,)) # Input layer for 22 linguistic feature columns
