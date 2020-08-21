@@ -1,4 +1,8 @@
-# Model 2: Word Embeddings model (using our own trained embeddings) #
+---
+layout: page
+title: Word Embeddings model (using our own trained embeddings
+---
+
 
 ![Word embeddings](assets/img/model2.png)
 
