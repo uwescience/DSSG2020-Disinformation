@@ -32,7 +32,7 @@ Overall, Model 1 and Model 2 have nearly identical rates of predicting true posi
 
 Although we didn’t have the bandwidth to fully and thoroughly analyze false positives, one theory we had about why both models are still misclassifying legitimate articles is because some of them talk about disinformation. We did find one article in the False Positives results to support this theory: 
 
-![Word embeddings](assets/img/false_positive.png)
+
 
 Since access to accurate information is essential for people to navigate through the health crisis we are living through, we want the final model to have as low of a false positive rate as possible, while achieving a true positive rate of at least 93%. Given the slightly lower rate of False Positives rate for Model 2, we would suggest that using an LSTM model with embeddings trained on COVID corpus be used instead of Model 1.
 
