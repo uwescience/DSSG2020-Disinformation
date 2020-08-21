@@ -32,6 +32,8 @@ Overall, Model 1 and Model 2 have nearly identical rates of predicting true posi
 
 Although we didn’t have the bandwidth to fully and thoroughly analyze false positives, one theory we had about why both models are still misclassifying legitimate articles is because some of them talk about disinformation. We did find one article in the False Positives results to support this theory: 
 
+![Word embeddings](assets/img/false_positive.png)
+
 Since access to accurate information is essential for people to navigate through the health crisis we are living through, we want the final model to have as low of a false positive rate as possible, while achieving a true positive rate of at least 93%. Given the slightly lower rate of False Positives rate for Model 2, we would suggest that using an LSTM model with embeddings trained on COVID corpus be used instead of Model 1.
 
 
@@ -42,7 +44,8 @@ Our findings demonstrate that RNN models do indeed work well for classification 
 It’s also important to reiterate that the purpose of an RNN-based classifier  is not to be a stand-alone tool, but rather to be deployed in conjunction with human review. The model prototypes we’ve built seem to be very promising in terms of their ability to greatly reduce the workload on domain experts who are trying to combat disinformation through time-consuming manual review. Human intervention is central to the success of this model. But we hope that when deployed in conjunction with human review, we can minimize disincentive of legitimate articles that talk about disinformation narratives. 
 
 
-**Recommendations**
+
+![Word embeddings](assets/img/recommendations.png)
 
 Neural Networks are often criticized for the ‘black box problem’. The question of neural network interpretability is under much discussion and scrutiny at the moment and it’s a very active area of research. This is something that should be taken into account. Area of further development of this model in the future. 
 
@@ -65,6 +68,8 @@ Throughout this project, our team relied heavily on literature review to inform 
 **How Deliverables Will Be Used**
 
 We hope that the deliverables will be used to design a larger model which will be able to provide disinformation indexes for news websites. Such an index can inform advertisers about the “health” of a news website and thereby stopping advertising content on “unhealthy” websites. We created and tested our models with the intention of the best one being useful to GDI as well as other researchers working in the space of disinformation. Going forward in developing the prototypes further, the following could prove useful: 
+
+![Word embeddings](assets/img/future_work.png)
 
 *Model Retraining*
 Because disinformation narratives change very rapidly, it will be important to retrain the classifier periodically on most recent data. It will also be important to determine how often the model needs to be retrained with new data. 
