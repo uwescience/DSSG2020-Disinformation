@@ -3,12 +3,6 @@ layout: page
 title: About
 ---
 
-## About
-
-Team Photo
-
-Individual Bios
-
 ### George Hope Chidziwisano, Fellow
 
 George Hope Chidziwisano is a PhD student in Information and Media at Michigan State University (MSU). Hope’s research focuses on Human Computer Interaction (HCI) and Information and Communication Technologies for Development (ICTD). Specifically, Hope is interested in investigating the role of sensor-based technologies for domestic activities in sub-Saharan Africa. He has conducted multiple design-oriented projects in Kenya. He has worked with local technicians to develop sensor-based systems for monitoring power-blackouts and domestic security in Kenyan households. He has also developed collaborative digital financial systems for promoting financial transparency and accountability in micro-savings groups.
@@ -28,14 +22,9 @@ Kseniya’s curiosity in social policy and environmental justice movement led he
 
 Maya Luetke, MSPH, is a doctoral student in the Department of Epidemiology and Biostatistics at Indiana University School of Public Health Bloomington. Her research focuses on the intersection of economics, infectious disease, sexual health, and gender-based violence. She is particularly interested in global health and has worked in several countries in Africa and Latin America. She is passionate about social justice and hopes to use data science methods to develop interventions that address structural inequities in the United States and abroad as well as conduct innovative and rigorous social epidemiologic research.
 
-## Roles or Contributions (optional, only if it makes sense to your team)
 
-
-## Where readers can find more details about the project, e.g. code, data, reports, etc.
 
 The code for the project can be found on the project's GitHub repository.
-
-The project has a WIKI page where reports and other documents can be found
 
 ## Acknowledgements
 
