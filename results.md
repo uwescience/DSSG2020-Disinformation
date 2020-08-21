@@ -70,19 +70,17 @@ Throughout this project, our team relied heavily on literature review to inform 
 
 
 
-HOW WILL DELIVERABLE BE USED
+**How Deliverables Will Be Used**
 
-We hope that the deliverables will be used to design a larger model which will be able to provide disinformation indexes for news websites. Such an index can inform advertisers about the “health” of a news website and thereby stopping advertising content on “unhealthy” websites. 
+We hope that the deliverables will be used to design a larger model which will be able to provide disinformation indexes for news websites. Such an index can inform advertisers about the “health” of a news website and thereby stopping advertising content on “unhealthy” websites. We created and tested our models with the intention of the best one being useful to GDI as well as other researchers working in the space of disinformation. Going forward in developing the prototypes further, the following could prove useful: 
 
-We created and tested our models with the intention of the best one being useful to GDI as well as other researchers working in the space of disinformation. Going forward in developing the prototypes further, the following could prove useful: 
-
-Model Retraining
+*Model Retraining*
 Because disinformation narratives change very rapidly, it will be important to retrain the classifier periodically on most recent data. It will also be important to determine how often the model needs to be retrained with new data. 
-Measures to Prevent Misuse 
+*Measures to Prevent Misuse*
 Any kind of classifier can be misused. We fully rely on GDI to place measures to prevent such misuse in the final iteration of this tool if used. 
-Application to Other Areas
+*Application to Other Areas*
 Lastly, GDI might find this model prototype useful for classification in other topic areas, and make our recommended model generalizable to other disinformation topics (besides COVID19) 
-Other researchers 
+*Other researchers*
 By making this an open-source model, we hope other researchers will be able to use our model as a guide in their projects. 
 
 
