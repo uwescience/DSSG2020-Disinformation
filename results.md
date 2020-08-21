@@ -62,9 +62,9 @@ In addition to the three models we’ve developed, we have also created the foll
 Working with text data requires that it is not only processed in accordance with standard natural language processing principles (standardizing, normalizing) but that it is also converted into a mathematical representation which then allows for more advanced machine learning. As described in the Methods section, word embeddings allow for such a transformation of text. There are many pre-trained word embeddings that are available to researchers (GloVe, Word2Vec). However, based on discussions with GDI and our data science team we chose to train our own GloVe embeddings on a subset of articles provided by GDI. This corpus was not part of our training dataset, and besides training word embeddings was not used for any other purpose. We produced a 300 dimension word embedding tailored to COVID keywords which we think could be very useful to future research. 
 
 
-*Annotated Bibliography*
+*Reading List*
 
-Throughout this project, our team relied heavily on literature review to inform our methodology. Our focus was on surveying the most recent literature on article classification with machine learning. We’ve read a total of 30 papers and documented key summaries in an annotated bibliography available in the public repository. This document serves as a guidepost for our thinking process, assumptions as well as framework within which this project took place. Our aim was to build on top of the most recent wisdom in text classification. 
+Throughout this project, our team relied heavily on literature review to inform our methodology. Our focus was on surveying the most recent literature on article classification with machine learning. We’ve read a total of 34 papers and have made the list of these papers available in the public repository. This document serves as a guidepost for our thinking process, assumptions as well as framework within which this project took place. This might prove a useful guide for others as well. 
 
 
 ![Future Work](assets/img/future_work.png)
