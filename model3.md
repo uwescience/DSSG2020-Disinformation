@@ -1,3 +1,7 @@
+---
+layout: page
+title: Model 3- LSTM + Linguistic Features
+---
 
 ![Model 3 Image](assets/img/model3.png)
 
