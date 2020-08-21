@@ -7,8 +7,9 @@ title: Methods
 
 The data for this project were collected by our partner organization, Global Disinformation Index  (GDI), and consists of genuine news articles and content identified to contain disinformation. The data were scraped from the internet using the software Veracity and provided to us in two separate .csv files:
 
-(1) articles labeled as containing disinformation 
-(2) articles labeled as legitimate news articles 
+    (1) articles labeled as containing disinformation
+
+    (2) articles labeled as legitimate news articles 
 
 All samples are related to coronavirus and were published between May and June 2020. Before any cleaning processes, the disinformation article dataset consisted of 20,172 samples and the legitimate article dataset included 14,278. 
 
@@ -16,7 +17,19 @@ The Global Disinformation Index also provided a separate corpus that was used to
 
 **Tools (aka “component specification”)**
 
-For data cleaning, preprocessing,and data modelling we are mostly relying on the following packages/libraries: NLTK, Pandas, scipy, and sklearn. We anticipate that a few more libraries will be used in the feature engineering process (i.e. word embedding packages such as Word2Vec). We are also working on streamlining some of our main script by developing individual modules in Python targeted as a specific task (i.e. data cleaning, embedded link analysis, etc.). Since all of these tools were designed for Python, they are already interoperable. 
+In order to prepare the data for modelling, we did the following:
+
+    1. Removed all duplicates in the article text column (i.e. any articles that had exactly the same text).
+
+    2. Removed any observations which were missing the article text.
+
+    3. Removed all non-English articles. 
+
+    4. Identified all embedded hyperlinks and replaced them with ‘HTMLEMBD’. 
+
+    5. Tokenized article text. 
+
+The following packages were used in data processing, feature engineering and modelling stages of the project:  NLTK, Pandas, SciPy, SpaCy,  Keras, TensorFlow, numpy, matplotlib and sklearn. We also used other libraries to train our word embeddings in Glove and Word2Vec. These libraries are Fasttext and Gensim libraries respectively. The outcomes from these approaches were saved in text files which were referenced in our word embedding model.
 
 **Processes**
 
