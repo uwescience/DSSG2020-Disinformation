@@ -2,9 +2,6 @@
 layout: page
 title: Results
 ---
-
-**Findings**
-
 We were able to run a total of three models using different combinations of hyperparameters, features and architectures. For models that relied exclusively on word embedding features (model 1 and model 2--hyperlink?), we used GridSearchCV to test a total of 72 hyperparameter combinations (see *Table 1* below) and ran each model for 7 epochs to assess learning and validation rates (refer to individual model tabs to see the graphs for respective models). We also used stratified cross validation with 5 folds for Models 1 (LSTM) and 2 (LSTM + Our Own Trained Embeddings) to avoid overfitting. For running the Multiple Inputs model, we were not able to utilize GridSearchCV. However, we manually ran the model with a set of hyperparameters. 
 
 *Table 1 - Hyperparameters Tested*
