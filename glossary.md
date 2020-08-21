@@ -1,4 +1,7 @@
-# Glossary
+---
+layout: page
+title: Glossary
+---
 
 These are the terms that we will be using commonly throughout our project:
 
