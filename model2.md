@@ -6,7 +6,7 @@ We initially embedded the words in our sample using GloVe pre-trained word embed
 
 ![Word embeddings](assets/img/layers2.png)
 
-Layers of the model:
+**Layers of the model**
 
 1. Embedding layer - using embedded article text (trained on COVID data)
 
@@ -18,12 +18,9 @@ Layers of the model:
 
 5. Output layer (provides classification)
 
-Features:
+**Features**
 
 We experimented with two different word embeddings - 200-dimensional and 300-dimensional GloVe layers. Article text was the only feature in this model. 
-
-Analysis:
-
 Our final test data had 7,105 samples. Of the 2,420 disinformation articles this  model correctly classified 2,268 of them. Of the 4,685 legitimate articles our model incorrectly classified 131 of them as disinformation. 
 
 Confusion Matrix:
