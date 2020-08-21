@@ -28,3 +28,4 @@ The code for the project can be found on the project's GitHub repository.
 
 ## Acknowledgements
 
+A special thanks to Maggie Engler and Lucas Wright from our partner organization the Global Disinformation Index, and the data scientists, Vaughn Iverson and Noah Benson, from the eScience Institute for their support and guidance with this project. 
