@@ -1,14 +1,15 @@
 **Model 3: Multiple Input Model**
-
-Short description:
+The existing literature indicates that neural networks have the greatest performance for text classification but they also don’t allow for the extraction of features since the features in such a model are hidden. Adding hand-crafted features add a greater amount of transparency about the features which have helped the model differentiate in the text classification task. Additionally, layering hand-crafted features on top of a neural network model in this way has been identified as a potential way to increase performance and an area of investigation by current neural network research on this topic.
 
 ![Word embeddings](assets/img/model3.png)
 
-This model aimed to leverage the addition of hand-crafted lexical and semantic features to our baseline model. These lexical and semantic features included: 
+**Features**
+
+This model aims to leverage the addition of hand-crafted lexical and semantic features to our baseline model. The following lexical and semantic features are included included: 
 
 1. Number of sentences in the article (‘sent_count')
 
-2. Number of stopwords to total words ('ratio_stops_tokens')
+2. Number of stopwords to total words ratio ('ratio_stops_tokens')
 
 3. Number of words with first letter capitalized
 
@@ -16,16 +17,16 @@ This model aimed to leverage the addition of hand-crafted lexical and semantic f
 
 5. Parts of Speech: Adposition (in, to), adverb (very, down), auxiliary , conjunction, coordinating conjunction, determiner, interjection, noun, numeral, particle, pronoun, proper noun, punctuation, subordinating conjunction, symbol, verb, space, other (‘sdfdsf’) 
 
+Here's what the metadata input looks like: 
+
 train_meta_data = df['PROPN','ADP','NOUN','PUNCT','SYM',
               'DET','CCONJ','VERB','NUM','ADV',
               'ADJ','AUX','SPACE','X','PRON',
               'PART','INTJ','SCONJ','sent_count','ratio_stops_tokens',
               'len_first_caps','len_all_caps']].values
 
-    
-The existing literature indicates that neural networks have the greatest performance for text classification but they also don’t allow for the extraction of features since the features in such a model are hidden. Adding hand-crafted features add a greater amount of transparency about the features which have helped the model differentiate in the text classification task. Additionally, layering hand-crafted features on top of a neural network model in this way has been identified as a potential way to increase performance and an area of investigation by current neural network research on this topic.
 
-    6. Architecture
+**Architecture**
     
 This model combines two different inputs. First, similar to the other two models, the article text was converted to word embeddings in the first layer. Next, the hand-crafted lexical and semantic features are also brought into the model as inputs in their own layer. 
 
@@ -41,7 +42,6 @@ nlp_input=Input(shape=[None]) # Input layer for text
     x = Dense(1, activation='sigmoid')(x) # Output layer
     model=Model(inputs=[nlp_input, meta_input], outputs=[x]) # Final model
 
-Layers of the multiple input model:
 
 1. Input layers:
   The first two layers of this model simply import the two input datasets.
