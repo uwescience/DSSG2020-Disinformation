@@ -14,9 +14,7 @@ This model aimed to leverage the addition of hand-crafted lexical and semantic f
 
 4. Number of words with all letters capitalized
 
-5. Parts of Speech
-
-a. Adposition (in, to), adverb (very, down), auxiliary , conjunction, coordinating conjunction, determiner, interjection, noun, numeral, particle, pronoun, proper noun, punctuation, subordinating conjunction, symbol, verb, space, other (‘sdfdsf’) 
+5. Parts of Speech: Adposition (in, to), adverb (very, down), auxiliary , conjunction, coordinating conjunction, determiner, interjection, noun, numeral, particle, pronoun, proper noun, punctuation, subordinating conjunction, symbol, verb, space, other (‘sdfdsf’) 
 
 train_meta_data = df['PROPN','ADP','NOUN','PUNCT','SYM',
               'DET','CCONJ','VERB','NUM','ADV',
@@ -24,7 +22,6 @@ train_meta_data = df['PROPN','ADP','NOUN','PUNCT','SYM',
               'PART','INTJ','SCONJ','sent_count','ratio_stops_tokens',
               'len_first_caps','len_all_caps']].values
 
-    5. The why?
     
 The existing literature indicates that neural networks have the greatest performance for text classification but they also don’t allow for the extraction of features since the features in such a model are hidden. Adding hand-crafted features add a greater amount of transparency about the features which have helped the model differentiate in the text classification task. Additionally, layering hand-crafted features on top of a neural network model in this way has been identified as a potential way to increase performance and an area of investigation by current neural network research on this topic.
 
@@ -61,4 +58,4 @@ Layers of the multiple input model:
   This layer indicates that we want a binary output of 0 or 1 with 0 indicating a prediction of legitimate and
 indicating a prediction of disinformation.
 
-Features:
+
