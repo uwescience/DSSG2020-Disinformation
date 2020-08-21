@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Word Embeddings model (using our own trained embeddings
+title: Model 2- LSTM + Word Embeddings
 ---
 
 
