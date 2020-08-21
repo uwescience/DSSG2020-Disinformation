@@ -1,11 +1,10 @@
-**Model 3: Multiple Input Model**
-
+# Model 3: Multiple Input Model
 
 ![Model 3 Image](assets/img/model3.png)
 
 The existing literature indicates that neural networks have the greatest performance for text classification but they also don’t allow for the extraction of features since the features in such a model are hidden. Adding hand-crafted features add a greater amount of transparency about the features which have helped the model differentiate in the text classification task. Additionally, layering hand-crafted features on top of a neural network model in this way has been identified as a potential way to increase performance and an area of investigation by current neural network research on this topic.
 
-**Features**
+## Features
 
 This model aims to leverage the addition of hand-crafted lexical and semantic features to our baseline model. The following lexical and semantic features are included included: 
 
@@ -21,19 +20,19 @@ This model aims to leverage the addition of hand-crafted lexical and semantic fe
 
 Here's what the metadata input looks like: 
 
+```
 train_meta_data = df['PROPN','ADP','NOUN','PUNCT','SYM',
               'DET','CCONJ','VERB','NUM','ADV',
               'ADJ','AUX','SPACE','X','PRON',
               'PART','INTJ','SCONJ','sent_count','ratio_stops_tokens',
               'len_first_caps','len_all_caps']].values
+```
 
-
-**Architecture**
+## Architecture
     
 This model combines two different inputs. First, similar to the other two models, the article text was converted to word embeddings in the first layer. Next, the hand-crafted lexical and semantic features are also brought into the model as inputs in their own layer. 
 
-
-
+```
 nlp_input=Input(shape=[None]) # Input layer for text
     meta_input=Input(shape=(22,)) # Input layer for 22 linguistic feature columns
     nlp_embeddings=Embedding(params.vocab_size, params.embedding_dim)(nlp_input)
@@ -42,8 +41,8 @@ nlp_input=Input(shape=[None]) # Input layer for text
     x = Dense(dense_1_filters, activation="relu")(x)
     x = Dropout(rate=dropout_rate)(x)
     x = Dense(1, activation='sigmoid')(x) # Output layer
-    model=Model(inputs=[nlp_input, meta_input], outputs=[x]) # Final model
-
+    model=Model(inputs=[nlp_input, meta_input], outputs=[x])
+```
 
 1. Input layers:
   The first two layers of this model simply import the two input datasets.
