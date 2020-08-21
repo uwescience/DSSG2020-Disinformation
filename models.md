@@ -1,3 +1,8 @@
+---
+layout: page
+title: Model 1- Baseline Model
+---
+
 This model acts as a baseline model for the next 2 models. Model 1 is a Recurrent Neural Network LSTM (Long Short Term Memory) model which takes the article texts as input and predicts whether the article is disinformation or legitimate. The model embeds the article text as vectors which are then fed into a bidirectional LSTM layer.
 
 ![Baseline model](assets/img/model.1.png)
