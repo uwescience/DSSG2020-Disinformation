@@ -33,5 +33,14 @@ A special thanks to Maggie Engler and Lucas Wright from our partner organization
 ## Contact Us
 
 If you have any feedback or questions for the project please feel free to reach out to the following:
-Richa Gupta
+- Global Disinformation Index
+info@disinformationindex.org
+
+- Richa Gupta
 rg3252@columbia.edu
+
+- Maya Leutke
+leutke@iu.edu
+
+- George Hope Chidziwisano
+chidziwi@msu.edu
