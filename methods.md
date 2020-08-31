@@ -35,9 +35,9 @@ The following packages were used in data processing, feature engineering and mod
 
 We conducted some exploratory analyses on the data using Jupyter Notebooks. These analyses included descriptive and summary statistics as well as data visualizations. 
 
-In order to prepare the data for natural language processing analysis, we performed a series of data cleaning steps. First, we combined the two datasets into one. Next, we removed all duplicates in the article text column (i.e. any articles that had exactly the same text) as well as any observations which were missing the article text. We then used the Language-Detection library in Python to identify and remove any non-English articles. 
+In order to prepare the data for natural language processing analysis, we performed a series of data quality checks and filtering. First, we combined the two datasets into one. Next, we removed all duplicates in the article text column (i.e. any articles that had exactly the same text) as well as any observations which were missing the article text. We then used the Language-Detection library in Python to identify and remove any non-English articles. 
 
-After basic data cleaning described above, we conducted a series of preprocessing steps to further wrangle the text data, in turn getting it ready for machine learning. The steps for preparing the data evolved iteratively as we gained more understanding of the models and their requirements. The primary preprocessing steps that we used were:
+After basic data quality checking described above, we conducted a series of preprocessing steps to further prepare the text data, in turn getting it ready for machine learning. The steps for preparing the data evolved iteratively as we gained more understanding of the models and their requirements. The primary preprocessing steps that we used were:
 
 * Tokenizing (breaking sentences/phrases into individual words)
 * Removing stop words (words that don't add much meaning to a sentence, such as 'the', 'that', 'a')
