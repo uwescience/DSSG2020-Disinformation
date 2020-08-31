@@ -72,11 +72,11 @@ Publicly labelling an article as “disinformation” must be supported by subst
 
 We have taken the following steps to address these ethical concerns:
 
-* Detailed process documentation
+* Detailed documentation of model development and use
 
-Besides being a good general practice, detailed process documentation will make the user aware of the blindspots of the model. 
+Besides being a good general practice, detailed documentation of the process allows the user aware of the blindspots of the model. 
 
-A good documentation will help the team lay out their assumptions and air out the inherent biases the team might have built into the model.
+Good documentation also assisted the team in laying out their assumptions and identifying the inherent biases the team might have built into the model.
 
 * Sharing the metrics/ criterion used
 
@@ -84,7 +84,7 @@ What is the predicted probability that an article is disinformation/legitimate? 
 
 * Building model alternatives and performing cross-model-validation
 
-The team will be building a variety of models and performing their validation to make an aware decision about the final model. The assessment of a model against the suitability and context of the problem will help reduce subjectivity around the outcomes further.
+The team built a variety of models and performed their validation tests to make an informed decision about the final model. The assessment of a model against the suitability and context of the problem helped further reduce subjectivity around the outcomes.
 
 ---
 
