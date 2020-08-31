@@ -28,9 +28,9 @@ This DSSG project was focused on addressing online disinformation related to cor
  
 **Questions**
 
-1. What makes an article disinformation?
+1. What distinguishes disinformation and legitimate news online?
 
-2. How do you automate classification of articles as genuine/disinformation? (we are looking at more than just articles, so maybe online news content?) 
+2. How do you automate classification of online news content as legitimate or disinformation?
 
 3. What are the preprocessing steps needed to have a successful NLP machine learning model that will accurately predict disinformation classification of online news articles?
 
@@ -60,7 +60,7 @@ Inditrect stakeholders are individuals who will be affected by the model after r
 
 The following ethical concerns are the most important for the project:
 
-There is a possibility that the model might automatically label a “genuine” article as “disinformation” because it covered a topic which is about disinformation. In such a situation, the model might harm the reputation of the authors, publishers, or website associated with that article.
+There is a possibility that the model might automatically label a “legitimate” article as “disinformation” because it covered a topic which is about disinformation. In such a situation, the model might harm the reputation of the authors, publishers, or website associated with that article.
 
 At the heart of this problem lies the difficulty of measuring the extent of disinformation in a given article. Are there half-truths present? And does the article mostly contain factual information save for a couple of sentences? Any tool built to automatically classify articles as disinformation then needs to make a trade-off between truthful and disinformation content. 
  
@@ -78,7 +78,7 @@ A good documentation will help the team lay out their assumptions and air out th
 
 * Sharing the metrics/ criterion used
 
-What is the predicted probability that an article is disinformation/ genuine? What are the hyper-parameters being used by the model? What should be the accuracy of the model to qualify as the chosen model? These and more questions about metrics, if answered, help the user validate the work being done.
+What is the predicted probability that an article is disinformation/legitimate? What are the hyper-parameters being used by the model? What should be the accuracy of the model to qualify as the chosen model? These and more questions about metrics, if answered, help the user validate the work being done.
 
 * Building model alternatives and performing cross-model-validation
 
