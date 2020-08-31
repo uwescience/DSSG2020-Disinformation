@@ -9,7 +9,7 @@ The existing literature indicates that neural networks have the greatest perform
 
 ## Features
 
-This model aims to leverage the addition of hand-crafted lexical and semantic features to our baseline model. The following lexical and semantic features are included included: 
+This model aims to leverage the addition of hand-crafted lexical and semantic features to our baseline model. The following lexical and semantic features are included: 
 
 1. Number of sentences in the article (‘sent_count')
 
