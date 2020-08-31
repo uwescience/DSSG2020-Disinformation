@@ -5,13 +5,13 @@ title: Methods
 
 **Data**
 
-The data for this project were collected by our partner organization, Global Disinformation Index  (GDI), and consists of genuine news articles and content identified to contain disinformation. The data were scraped from the internet using the software Veracity and provided to us in two separate .csv files:
+The data for this project were collected by our partner organization, Global Disinformation Index (GDI), and consist of legitimate news articles and content identified to contain disinformation related to the novel coronavirus. The data were scraped from the internet using the software Veracity and provided to us in two separate .csv files:
 
     (1) articles labeled as containing disinformation
 
     (2) articles labeled as legitimate news articles 
 
-All samples are related to coronavirus and were published between May and June 2020. Before any cleaning processes, the disinformation article dataset consisted of 20,172 samples and the legitimate article dataset included 14,278. 
+All samples are related to the novel coronavirus and were published between March and June 2020. Before any quality control processes, the disinformation dataset consisted of 20,172 articles and the legitimate dataset included 14,278 articles. 
 
 The Global Disinformation Index also provided a separate corpus that was used to train word embeddings. This corpus (1.3 GiB) contained over 574,000 unlabeled articles about coronavirus. We chose to train word embeddings on this separate corpus in order to ensure that our model would learn from a set of articles it has never seen thereby minimizing overfitting.
 
