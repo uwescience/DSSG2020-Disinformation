@@ -39,17 +39,17 @@ This DSSG project was focused on addressing online disinformation related to cor
 
 **Stakeholders**
 
-The project consists of direct stakeholders who are involved from the early stages of developing the models and indirect stakeholders who will be affected by the operation of the model or use it at later stages. Our team will be directly working with the following stakeholders:
+There were several direct and indirect stakeholders to this project. The direct stakeholders were involved in the early stages of developing the models and the indirect stakeholders were those who might be affected by the operation of the model or engage with it at later stages. Our team worked closely with the following direct stakeholders:
  
 * **Global Disinformation Index (GDI)**: GDI works with governments, businesses and civil society to defund and down-rank disinformation websites. They have built various classifiers to support detection of disinformation in news articles. GDI’s Maggie Engler (Lead Data Scientist) and Lucas Wright (Senior Researcher) are the project leads.
  
-* **University of Washington eScience Institute**: This project is part of the Data Science for Social Good (DSSG) program hosted by the e-Science Institute at the University of Washington. The eScience Institute provides the administrative teams and data scientists (Noah Benson and Vaughn Iverson).
+* **University of Washington eScience Institute**: This project was part of the Data Science for Social Good (DSSG) program hosted by the e-Science Institute at the University of Washington. The eScience Institute provided resources including key personnel such as the administrative team and the data scientists (Noah Benson and Vaughn Iverson).
  
 * **Data Science for Social Good Fellows**: This group of stakeholders consist of students from different universities who are working as interns. The fellows are working directly with project lead and data scientists to develop the model.
 
-* **Ad exchange companies**: Ad exchange companies (e.g., Google) will be the primary users of the model to identify articles that have disinformation.
+* **Ad exchange companies**: Ad exchange companies may use the model we've produced to identify articles that have disinformation or inform their current machine learning models in this domain.
 
-Inditrect stakeholders are individuals who will be affected by the model after release: they are not directly involved during the initial design process of the model. After the model is released, GDI will continue to work with indirect stakeholders. Meanwhile, the indirect stakeholders of this project are:
+Indirect stakeholders are individuals who will be affected by the model after release: they are not directly involved during the initial design process of the model. After the model is released, GDI will continue to work with indirect stakeholders. Meanwhile, the indirect stakeholders of this project are:
  
 * **Global Alliance for Responsible Media (GARM)**: GARM brings together advertisers, agencies, media companies, platforms and industry organizations to improve public safety. GDI will deliver the model to GARM to be shared with other stakeholders within GARM.
  
