@@ -58,17 +58,19 @@ Indirect stakeholders are individuals who will be affected by the model after re
 
 **Ethics**
 
-The following ethical concerns are the most important for the project:
+The primary ethical considerations of this project were:
 
+* **Erroneously labeling a legitimate article as disinformation**
 There is a possibility that the model might automatically label a “legitimate” article as “disinformation” because it covered a topic which is about disinformation. In such a situation, the model might harm the reputation of the authors, publishers, or website associated with that article.
 
 At the heart of this problem lies the difficulty of measuring the extent of disinformation in a given article. Are there half-truths present? And does the article mostly contain factual information save for a couple of sentences? Any tool built to automatically classify articles as disinformation then needs to make a trade-off between truthful and disinformation content. 
- 
+
+* **Possible misuse of our end product**
 Also, due to the open-source nature of this project, it is possible that groups invested in the creation and propagation of digital disinformation may utilize our code and documentation in order to produce content which would escape detection in our final model.
 
 Publicly labelling an article as “disinformation” must be supported by substantial evidence and rigorous protocols which might be lacking in some of the machine learning models that the team decides to use. The model will also be limited by the nuances of the training data.
 
-We will be undertaking the following steps to address the ethical questions:
+We have taken the following steps to address these ethical concerns:
 
 * Detailed process documentation
 
