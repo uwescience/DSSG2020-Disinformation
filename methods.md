@@ -37,14 +37,14 @@ We conducted some exploratory analyses on the data using Jupyter Notebooks. Thes
 
 In order to prepare the data for natural language processing analysis, we performed a series of data cleaning steps. First, we combined the two datasets into one. Next, we removed all duplicates in the article text column (i.e. any articles that had exactly the same text) as well as any observations which were missing the article text. We then used the Language-Detection library in Python to identify and remove any non-English articles. 
 
-After basic data cleaning described above, we conducted a series of preprocessing steps to further wrangle the text data, in turn getting it ready for machine learning. The steps for prepping are evolving as we are gaining more understanding of the models that we want to use. However, some of the steps that we have tried so far are:
+After basic data cleaning described above, we conducted a series of preprocessing steps to further wrangle the text data, in turn getting it ready for machine learning. The steps for preparing the data evolved iteratively as we gained more understanding of the models and their requirements. The primary preprocessing steps that we used were:
 
 * Tokenizing (breaking sentences/phrases into individual words)
 * Removing stop words (words that don't add much meaning to a sentence, such as 'the', 'that', 'a')
 * Word embeddings (creating mathematical vector representations of words)
 
-In the upcoming weeks, we will need to extract features from the text data through further data processing.  Currently, we plan on extracting both linguistic features (i.e. average sentence length, average use of nouns) as well as text representation features (where each word is transformed into mathematical vector).  A different process is required to extract each type, with NLP used for the latter and some form of word embeddings (Word2Vec, Bag of Words, used for the latter). 
+Next, we extracted hand-crafted features from the text data using further data processing methods. We extracted both linguistic and semantic features (i.e. average sentence length, average use of nouns) as well as text representation features (where each word is transformed into mathematical vector). A different process is required to extract each type, with NLP used for the latter and some form of word embeddings (Word2Vec, Bag of Words, used for the latter). 
 
-The following diagram captures the overall workflow of this project, starting with data cleaning and processing and culminating in selection of the final model. Once the data is prepped it is divided into test and train data. While training the model the train data is also used to cross-validate the model to make sure that the chosen model has the highest performance. Finally, the performance of a model is evaluated by how well it is able to predict the test data categories.
+The following diagram captures the overall workflow of this project, starting with data cleaning and processing and culminating in selection of the final model. Once the data was prepared and preprocessed, it was divided into train and test data. While training the model, the train data was also used to cross-validate the model to make sure that the chosen model had the highest performance. Finally, the performance of a model was evaluated by how well it was able to predict disinformation from legitimate articles in the data that had been set aside for testing.
 
 ![Image of disinformation narratives](assets/img/Pipeline.png) 
