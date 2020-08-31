@@ -16,16 +16,15 @@ layout: default
 3. Maya Luetke, Indiana University
 4. Richa Gupta, Columbia University
 
-**Project Lead/s:**
+**Project Leads:**
 
 1. Maggie Engler, Lead Data Scientist, Global Disinformation Index
 2. Lucas Wright, Senior Researcher, Global Disinformation Index
 
-**Data Science Lead:** 
+**Data Science Leads:** 
 
 1. Noah Benson, Senior Data Scientist, eScience Institute, University of Washington
 2. Vaugh Iverson, Research Scientist, eScience Institute, University of Washington
-
 
 
 # Abstract
