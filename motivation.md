@@ -30,11 +30,11 @@ This DSSG project was focused on addressing online disinformation related to cor
 
 1. What distinguishes disinformation and legitimate news online?
 
-2. How do you automate classification of online news content as legitimate or disinformation?
+2. What methods can be used to automate classification of online news content as legitimate or disinformation?
 
-3. What are the preprocessing steps needed to have a successful NLP machine learning model that will accurately predict disinformation classification of online news articles?
+3. What preprocessing steps are necessary to enable the success of a classification model which depends on natural language processing methods?
 
-4. How can such a model be built to detect disinformation in a perpetually evolving landscape of disinformation narratives? 
+4. How can a machine learning model be built to detect disinformation in a perpetually evolving landscape of disinformation narratives? 
 
 
 **Stakeholders**
