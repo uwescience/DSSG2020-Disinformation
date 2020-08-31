@@ -39,8 +39,8 @@ info@disinformationindex.org
 - Richa Gupta
 rg3252@columbia.edu
 
-- Maya Leutke
-leutke@iu.edu
+- Maya Luetke
+luetke@iu.edu
 
 - George Hope Chidziwisano
 chidziwi@msu.edu
