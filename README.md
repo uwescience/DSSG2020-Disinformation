@@ -11,32 +11,30 @@ See [project web page](https://uwescience.github.io/DSSG2020-Disinformation/).
 
 ## Pre-requisites
 
-To run the code following pre-requisite should be met:
-1. Data must be present in form of a csv file at /data/dssg-disinfo/ folder. The csv file must have three columns ```article_pk```, ```article_text```, and ```label```.
+To run the code with your own data following pre-requisite should be met:
+1. Data must be present in form of a csv file at /data folder. The csv file must have three columns ```article_pk```, ```article_text```, and ```label```.
 ```label``` is a binary column with value 1 if the ```article_text``` is disinformation and 0 if the ```article_text``` is legitimate.
 ```article_pk``` is a unique identifier for the ```article_text```.
 ```article_text``` is a string column which contains the articles scraped from the websites. Each column is an article either disinformation or legitimate.
 
 2. You can also create an environment file in the dssg_disinfo folder (or same location as where the Dockerfile is present) . This environment file should have the following variables defined:
-
 ``` 
 ENV DATA_PATH "/data"
 ENV ALL_FEATURES_DATA articles.csv 
 ```
 Here ```DATA_PATH``` is the location from where the data will be read.
-```ALL_FEATURES_DATA``` should be the name of the csv file where the data is stored (present at ```DATA_PATH``` specified above). Read Pre-requisite point 1. for more details on the required format for the data file.
+```ALL_FEATURES_DATA``` should be the name of the csv file where the data is stored (present at ```DATA_PATH``` specified above). Currently, the file reads from a sample dataset whicha has 80 articles, 40 disinformation and 40 legitimate. In case you want to work with your own data, read Pre-requisite point 1. for more details on the required format for the data file.
  
 3. The output from the code will be saved in a ```/output``` folder in the current working directory. To read about the different types of outputs that are generated please read the Output section.
 
 ## Running
 
 1. Build the docker.
-```$ docker build --tag dssg-disinfo/testdocker "$PWD"```
+```$ docker build --tag nben/dssg-disinfo "$PWD"```
 
 2. Run the docker.
-The following command will read in the data from /data/dssg-disinfo folder, run the Dockerfile and save the outputs generated from the code inside /output folder.
-```$ docker run -it --rm -v /data/dssg-disinfo:/data -v $PWD/output:/output dssg-disinfo/testdocker```
-
+The following command will run the Dockerfile and save the outputs generated from the code inside /output folder.
+```$ docker run -it --rm -v $PWD/output:/output nben/dssg-disinfo```
 
 ## Output
 The following outputs are produced by the code:
